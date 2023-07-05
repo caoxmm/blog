@@ -78,22 +78,23 @@ Direct Links:
 
 ### Method 4
 
- - Install [Go programming language](https://go.dev/doc/install) in your operating system.
+- Install [Go programming language](https://go.dev/doc/install) in your operating system.
 
- - Intialize your own hugo mod
- 
+- Intialize your own hugo mod
+
 ```
 hugo mod init YOUR_OWN_GIT_REPOSITORY
 ```
 
- - Add PaperMod in your `config.yml` file
+- Add PaperMod in your `config.yml` file
 
 ```
 module:
   imports:
   - path: github.com/adityatelange/hugo-PaperMod
 ```
- - Update theme
+
+- Update theme
 
 ```
 hugo mod get -u
@@ -119,15 +120,15 @@ You can go through few videos which are available on YouTube for getting to know
 
 ## Quick Links
 
--   ### [Papermod - Features](../papermod-features)
+- ### [Papermod - Features](../papermod-features)
 
--   ### [Papermod - FAQs](../papermod-how-to)
+- ### [Papermod - FAQs](../papermod-how-to)
 
--   ### [Papermod - Variables](../papermod-variables)
+- ### [Papermod - Variables](../papermod-variables)
 
--   ### [Papermod - Icons](../papermod-icons)
+- ### [Papermod - Icons](../papermod-icons)
 
--   ### [ChangeLog](https://github.com/adityatelange/hugo-PaperMod/releases)
+- ### [ChangeLog](https://github.com/adityatelange/hugo-PaperMod/releases)
 
 ---
 
