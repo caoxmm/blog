@@ -13,3 +13,11 @@ opensumi extension docs [如何开发插件|opensumi](https://opensumi.com/zh/do
 vscode extension docs [Extension Guide|Visual studio Code Extension API](https://code.visualstudio.com/api/extension-guides/overview)
 
 <!--more-->
+
+### 1. learning things about vscode extensions
+
+vscode extension hello world:
+
+```
+npm install -g yo generator-code
+```
