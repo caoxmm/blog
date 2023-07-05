@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://caoxmm.github.io/blog/sitemap.xml
