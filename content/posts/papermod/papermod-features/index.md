@@ -2,7 +2,6 @@
 title: "Features"
 summary: Learn About All Features in PaperMod
 date: 2021-01-20
-weight: 2
 aliases: ["/papermod-features"]
 tags: ["PaperMod"]
 author: "Aditya Telange"
@@ -110,15 +109,15 @@ add following to config file
 
 ```yml
 params:
-    homeInfoParams:
-        Title: Hi there wave
-        Content: Can be Info, links, about...
+  homeInfoParams:
+    Title: Hi there wave
+    Content: Can be Info, links, about...
 
-    socialIcons: # optional
-        - name: "<platform>"
-          url: "<link>"
-        - name: "<platform 2>"
-          url: "<link2>"
+  socialIcons: # optional
+    - name: "<platform>"
+      url: "<link>"
+    - name: "<platform 2>"
+      url: "<link2>"
 ```
 
 ---
@@ -133,25 +132,25 @@ add following to config file
 
 ```yml
 params:
-    profileMode:
-        enabled: true
-        title: "<Title>" # optional default will be site title
-        subtitle: "This is subtitle"
-        imageUrl: "<image link>" # optional
-        imageTitle: "<title of image as alt>" # optional
-        imageWidth: 120 # custom size
-        imageHeight: 120 # custom size
-        buttons:
-            - name: Archive
-              url: "/archive"
-            - name: Github
-              url: "https://github.com/"
+  profileMode:
+    enabled: true
+    title: "<Title>" # optional default will be site title
+    subtitle: "This is subtitle"
+    imageUrl: "<image link>" # optional
+    imageTitle: "<title of image as alt>" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Archive
+        url: "/archive"
+      - name: Github
+        url: "https://github.com/"
 
-    socialIcons: # optional
-        - name: "<platform>"
-          url: "<link>"
-        - name: "<platform 2>"
-          url: "<link2>"
+  socialIcons: # optional
+    - name: "<platform>"
+      url: "<link>"
+    - name: "<platform 2>"
+      url: "<link2>"
 ```
 
 ---
@@ -445,46 +444,47 @@ t - Theme toggle
 
 #### Twitter Cards Support
 
-* The Twitter Cards metadata, except ``twitter:image`` should not require
+- The Twitter Cards metadata, except `twitter:image` should not require
   additional configuration, since it is generated from metadata that
   you should already have (for instance the page title and description).
-* The ``twitter:image`` uses the [Post Cover Image](#post-cover-image), if present.
-* In the absence of a cover images, the first image from the ``images``
+- The `twitter:image` uses the [Post Cover Image](#post-cover-image), if present.
+- In the absence of a cover images, the first image from the `images`
   frontmatter (a list) is used.
   ```yaml
   images:
     - image_01.png
     - image_02.png
   ```
-* Finally, if neither of those are provided, ``twitter:image`` comes from the first
+- Finally, if neither of those are provided, `twitter:image` comes from the first
   [Page Bundle](https://gohugo.io/content-management/page-bundles/)
-  image with ``feature`` in the name, with a fallback to the first image with
-  ``cover`` or ``thumbnail`` in the name.
+  image with `feature` in the name, with a fallback to the first image with
+  `cover` or `thumbnail` in the name.
 
 #### OpenGraph support
 
-* The OpenGraph metadata, except ``og:image`` should not require
+- The OpenGraph metadata, except `og:image` should not require
   additional configuration, since it is generated from metadata that
   you should already have (for instance the page title and description).
-* The ``og:image`` uses the [Post Cover Image](#post-cover-image), if present.
-* In the absence of a cover images, the first image from the ``images``
+- The `og:image` uses the [Post Cover Image](#post-cover-image), if present.
+- In the absence of a cover images, the first image from the `images`
   frontmatter (a list) is used.
   ```yaml
   images:
     - image_01.png
     - image_02.png
   ```
-* Finally, if neither of those are provided, ``og:image`` comes from the first
+- Finally, if neither of those are provided, `og:image` comes from the first
   [Page Bundle](https://gohugo.io/content-management/page-bundles/)
-  image with ``feature`` in the name, with a fallback to the first image with
-  ``cover`` or ``thumbnail`` in the name.
-* For pages, you can also add audio (using frontmatter ``audio: filename.ext``) and/or
+  image with `feature` in the name, with a fallback to the first image with
+  `cover` or `thumbnail` in the name.
+- For pages, you can also add audio (using frontmatter `audio: filename.ext`) and/or
   videos.
   ```yaml
   videos:
     - filename01.mov
     - filename02.avi
   ```
+
 ---
 
 ### Multilingual Support
