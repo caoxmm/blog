@@ -3,7 +3,7 @@ author: "Simon"
 title: "Opensumi Extension Started"
 date: 2023-07-05T11:03:24+08:00
 description: "Guide to Opensumi Extension usage"
-tags: ["Opensumi", "Extension", "work"]
+tags: ["Opensumi", "vscode", "Extension", "work"]
 ShowToc: false
 ShowBreadCrumbs: false
 ---
@@ -79,7 +79,7 @@ vscode extension docs [Extension Guide|Visual studio Code Extension API](https:/
 
 - 1. Commands- [ built-in commands ](https://code.visualstudio.com/api/references/commands)
 
-  The editor.action.addCommentLine command, for example, comments the currently selected lines in the active text editor:
+  The `editor.action.addCommentLine` command, for example, comments the currently selected lines in the active text editor:
 
   ```typescript
   import * as vscode from "vscode";
@@ -93,10 +93,53 @@ vscode extension docs [Extension Guide|Visual studio Code Extension API](https:/
   );
   ```
 
-[vscode extension manifest](https://code.visualstudio.com/api/references/extension-manifest)
+- 2.  Tree View
+
+      - 1> using the contributes.views Contribution Point in package.json.
+
+        ```json
+        {
+          "contributes": {
+            "views": {
+              "explorer": [
+                {
+                  "id": "nodeDependencies",
+                  "name": "Node Dependencies"
+                }
+              ]
+            }
+          }
+        }
+        ```
+
+      - 2> The second step is to provide data to the view you registered so that VS Code can display the data in the view.
+
+      ```typescript
+      export class DepNodeProvider
+        implements vscode.TreeDataProvider<Dependency> {
+        // implemants
+      }
+      ```
+
+      - 3> The third step is to register the above data provider to your view.
+
+      ```typescript
+      const rootPath =
+        vscode.workspace.workspaceFolders &&
+        vscode.workspace.workspaceFolders.length > 0
+          ? vscode.workspace.workspaceFolders[0].uri.fsPath
+          : undefined;
+      vscode.window.registerTreeDataProvider(
+        "nodeDependencies",
+        new NodeDependenciesProvider(rootPath)
+      );
+      // or
+
+      vscode.window.createTreeView("nodeDependencies", {
+        treeDataProvider: new NodeDependenciesProvider(rootPath),
+      });
+      ```
+
+      [vscode extension manifest](https://code.visualstudio.com/api/references/extension-manifest)
 
 - **Note:** Use the online reference of [Supported TeX Functions](https://katex.org/docs/supported.html)
-
-```
-
-```
