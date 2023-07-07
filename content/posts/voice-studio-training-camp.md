@@ -4,7 +4,6 @@ title: "有声演播训练营"
 date: 2023-07-07T10:50:58+08:00
 description: "本次参与有声演播训练营，目的就是让自己说话口齿清晰"
 tags: ["voice"]
-ShowToc: false
 ShowBreadCrumbs: false
 ---
 
@@ -51,5 +50,5 @@ ShowBreadCrumbs: false
 
 - 3> 怎么练习
   <pre>
-      一次练一项，一次就练重音。
+      一次练一项，一次就练重音等等...
   </pre>
