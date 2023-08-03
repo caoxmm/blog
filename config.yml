@@ -47,6 +47,7 @@ params:
   description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   author: Theme PaperMod
   # author: ["Me", "You"] # multiple authors
+  mermaid: true
 
   defaultTheme: auto
   # disableThemeToggle: true
