@@ -25,6 +25,34 @@
 
 
 
+
+ <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    document.addEventListener("DOMContentLoaded", function() {
+    var config = {
+        startOnLoad: true,
+        theme: "default",
+        securityLevel: "loose",
+        flowchart: {
+            htmlLabels: true,
+            useMaxWidth: true
+        },
+        sequenceDiagram: {
+            diagramMarginX: 50,
+            diagramMarginY: 10,
+            actorMargin: 50,
+            width: 150,
+            height: 65,
+            boxMargin: 10,
+            boxTextMargin: 5,
+            noteMargin: 10,
+            messageMargin: 35,
+            mirrorActors: true
+        }
+    };
+    mermaid.initialize(config);
+});
+</script>
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -136,29 +164,3 @@
 </script>
 {{- end }}
 
-
-
- <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({
-        startOnLoad: true,
-        theme: "dark",
-        securityLevel: "loose",
-        flowchart: {
-            htmlLabels: true,
-            useMaxWidth: true
-        },
-        sequenceDiagram: {
-            diagramMarginX: 50,
-            diagramMarginY: 10,
-            actorMargin: 50,
-            width: 150,
-            height: 65,
-            boxMargin: 10,
-            boxTextMargin: 5,
-            noteMargin: 10,
-            messageMargin: 35,
-            mirrorActors: true
-        }
-    });
-</script>
