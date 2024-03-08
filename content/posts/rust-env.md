@@ -2,8 +2,8 @@
 author: "Simon"
 title: "Rust Env"
 date: 2024-03-09T03:50:28+08:00
-description: "Guide to emoji usage in Hugo"
-tags: ["emoji"]
+description: "The step of rust env install in ubuntu"
+tags: ["rust"]
 ShowToc: false
 ShowBreadCrumbs: false
 ---
