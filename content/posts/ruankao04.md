@@ -20,4 +20,7 @@ ShowBreadCrumbs: false
 1. OSI 七层协议：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层
 1. IEEE 802 规范：802.1（802 协议概论）、802.2(逻辑链路控制层 Logical Link Control LLC 协议) 802.3(以太网的 CSMA/CD 载波监听多路访问/冲突检测)、802.4(令牌总线 Token bus 协议)、802.5(令牌环 Token Ring 协议)、802.6(城域网协议)、802.7(FDDI 宽带技术协议)、802.8(光线技术协议)、802.9(局域网上的语音/数据集成规范)、802.10(局域网安全互操作标准)、802.11(无线局域网 WLAN 标准协议)
 
-1. 应用层协议：FTP(File Transfer Protocol, 文件传输协议)、TFTP(Trivial File Transfer Protocol)
+1. 应用层协议：FTP(File Transfer Protocol, 文件传输协议)、TFTP(Trivial File Transfer Protocol)、HTTP(Hypertext Transfer Protocol, 超文本传输协议)、SMTP(simple mail Transfer Protocol, 简单文件传输协议)、DHCP(Dynamic Host config system，动态主机配置协议)、Telnet(远程登录协议)、DNS(Domain Name System,域名系统)、SNMP(simple network management protocol, 简单网络管理协议)
+
+1. 传输层有两个主要协议，TCP 和 UDP(User Datagram Protocol, 用户数据报协议)这些协议负责提供流量控制、错误校验和排序服务。
+1. 网络层中由 IP、ICMP(Internet Control Message Protocol, 网际控制报文协议)、ARP(Address resolution Protocol, 地址解析协议)、RARP()
