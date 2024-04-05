@@ -44,3 +44,5 @@ source ~/.bashrc
 nvm ls-remote
 nvm install ...
 ```
+
+https://www.freecodecamp.org/chinese/news/manage-multiple-github-accounts-the-ssh-way/
